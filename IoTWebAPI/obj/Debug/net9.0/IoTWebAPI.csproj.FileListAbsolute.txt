@@ -156,3 +156,11 @@ C:\Users\laptopss\.arduinoIDE\IoTWebAPI\IoTWebAPI\obj\Debug\net9.0\refint\IoTWeb
 C:\Users\laptopss\.arduinoIDE\IoTWebAPI\IoTWebAPI\obj\Debug\net9.0\IoTWebAPI.pdb
 C:\Users\laptopss\.arduinoIDE\IoTWebAPI\IoTWebAPI\obj\Debug\net9.0\IoTWebAPI.genruntimeconfig.cache
 C:\Users\laptopss\.arduinoIDE\IoTWebAPI\IoTWebAPI\obj\Debug\net9.0\ref\IoTWebAPI.dll
+C:\Users\laptopss\.arduinoIDE\IoTWebAPI\IoTWebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\laptopss\.arduinoIDE\IoTWebAPI\IoTWebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\laptopss\.arduinoIDE\IoTWebAPI\IoTWebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\laptopss\.arduinoIDE\IoTWebAPI\IoTWebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\laptopss\.arduinoIDE\IoTWebAPI\IoTWebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\laptopss\.arduinoIDE\IoTWebAPI\IoTWebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\laptopss\.arduinoIDE\IoTWebAPI\IoTWebAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\laptopss\.arduinoIDE\IoTWebAPI\IoTWebAPI\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
