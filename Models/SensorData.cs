@@ -1,22 +1,16 @@
-using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace IoTWebAPI.Models
 {
     public class SensorData
     {
-        public int id { get; set; }
+        public int Id { get; set; }
+        public int DeviceId { get; set; }
+        public string Type { get; set; } = "";
+        public double Value { get; set; } = 0.0;
+        public DateTime? ReceivedAt { get; set; } = DateTime.UtcNow;
 
-        [Required]
-        public int device_id { get; set; }
-
-        [Required]
-        public string type { get; set; } = "";
-
-        public double value { get; set; } = 0.0;
-
-        public DateTime? received_at { get; set; } = DateTime.UtcNow;
-
-        // Navigation
-        public Device? Device { get; set; }
+        [ForeignKey("DeviceId")]
+        public virtual Device? Device { get; set; }
     }
 }

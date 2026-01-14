@@ -1,26 +1,21 @@
-using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace IoTWebAPI.Models
 {
     public class Device
     {
-        public int id { get; set; }
+        public int Id { get; set; }
+        public int UserId { get; set; }
+        public string Name { get; set; } = "";
+        public string DeviceKey { get; set; } = "";
+        public bool IsOnline { get; set; } = false;
+        public DateTime? CreatedAt { get; set; } = DateTime.UtcNow;
 
-        [Required]
-        public int user_id { get; set; } // creator user id
+        [ForeignKey("UserId")]
+        public virtual User? User { get; set; }
 
-        [Required]
-        public string name { get; set; } = "";
-
-        [Required]
-        public string device_key { get; set; } = "";
-
-        public bool is_online { get; set; } = false;
-
-        public DateTime? created_at { get; set; } = DateTime.UtcNow;
-
-        // Navigation
-        public User? User { get; set; }
-        public ICollection<SensorData>? SensorDataList { get; set; }
+        [JsonIgnore]
+        public virtual ICollection<SensorData>? SensorDatas { get; set; }
     }
 }
